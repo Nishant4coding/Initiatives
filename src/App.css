@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+.highlight-number {
+  font-weight: bold;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.website-divider-container-283855 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.divider-img-283855
+{
+	position: absolute;
+	width: 139%;
+	height: 190px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill: rgb(255, 185, 81)
+}
+
+
+
+.website-divider-container-122519 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-122519
+{
+	position: absolute;
+	width: 500%;
+	height: 77px;
+	float: right;
+	transform: scale(-1, 1);
+	bottom:0px;
+	right: 0px;
+	fill:  rgb(255, 185, 81) ;
+}
+
+.custom_orange{
+  background-color: rgb(255, 185, 81) ;
+}
+
+.website-divider-container-884990 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-884990
+{
+	position: absolute;
+	width: 500%;
+	height: 77px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill:  rgb(255, 185, 81) ;
+}
+
+
+
+.website-divider-container-890308 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-890308
+{
+	position: absolute;
+	width: 221%;
+	height: 108px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill: rgb(255, 185, 81) ;
+}
+
+
+.website-divider-container-212093 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-212093
+{
+	position: absolute;
+	width: 165%;
+	height: 154px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill: rgb(255, 208, 0)
+}
+
+
+
+.website-divider-container-365285 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-365285
+{
+	position: absolute;
+	width: 221%;
+	height: 108px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill: rgb(255, 185, 81) ;
+}
+
+
+.website-divider-container-413413 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-413413
+{
+	position: absolute;
+	width: 100%;
+	height: 118px;
+	
+	transform: scale(1, 1);
+	bottom:0px;
+	left: 0px;
+	fill: rgb(255, 208, 0)
+}
+
+.website-divider-container-603707 {
+  overflow:hidden;
+  position: relative;
+  height: 100%;
+}
+
+.divider-img-603707
+{
+	position: absolute;
+	width: 260%;
+	height: 118px;
+	float: right;
+	transform: scale(-1, -1);
+	top:0px;
+	right: 0px;
+	fill: rgb(255, 208, 0)
+}
+
+@media (max-width: 768px) {
+  .highlight-number {
+    display: block;
+    margin-top: 0.5rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header{
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .custom-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-flex a{
+    margin-left: 0px;
+  }
+  .mobile{
+    display: none;
   }
 }
