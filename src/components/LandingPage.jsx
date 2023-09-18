@@ -349,6 +349,7 @@ function LandingPage() {
                   </p>
                 </div>
                 <div className=" flex custom-flex justify-center items-center ">
+                  <Link to="https://drive.google.com/file/d/1qcQqJvVQwV8U2zBKbG7LiyCOyGRBGd3Y/view?usp=sharing">
                   <div
                     className="about-card p-6 bg-orange-300 rounded-lg shadow-lg shadow-red m-10 w-60 "
                     style={{ display: "flex", alignItems: "center" }}
@@ -358,6 +359,7 @@ function LandingPage() {
                       100+ Startups
                     </h2>
                   </div>
+                  </Link>
                   <div
                     className="about-card p-6 bg-orange-300 rounded-lg shadow-lg shadow-red  w-60 "
                     style={{ display: "flex", alignItems: "center" }}
