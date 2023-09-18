@@ -13,7 +13,7 @@ import Investment from "./components/Investment/Investment";
 function App() {
   return (
     <>
-      <Routes>
+      <Routes >
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about" element={<UserProfile />} />
