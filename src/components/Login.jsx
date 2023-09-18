@@ -1,6 +1,7 @@
 import React from "react";
 import loginsignup from "./Assets/login-signup.jpg";
 import logoecell from "./Assets/logo.png";
+import {Link} from 'react-router-dom'
 
 function Login() {
   return (
@@ -8,28 +9,28 @@ function Login() {
       <section className="w-full px-4 text-gray-700 bg-white sticky top-0 z-10 ">
         <div className="container flex flex-col flex-wrap items-center justify-between py-2 mx-auto md:flex-row max-w-7xl">
           <div className="relative flex flex-col md:flex-row">
-            <a
-              href="#_"
+            <Link
+              to="#_"
               className="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
               <img src={logoecell} className="mr-5" />
               <span className="mx-auto text-3xl font-black leading-none text-black select-none">
                 E-Cell Campus Ambassador
               </span>
-            </a>
+            </Link>
             <nav className="flex flex-wrap sm:items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-20    md:border-l md:border-gray-200 ">
-              <a
-                href="#_"
+              <Link
+                to="#_"
                 className="mr-40 ml-20 r-0 font-medium leading-6 text-lg text-gray-600 hover:text-orange-500"
               >
                 Home
-              </a>
-              <a
-                href="/dashboard"
+              </Link>
+              <Link
+                to="/dashboard"
                 className="mr-10 font-medium text-lg leading-6 text-gray-600 hover:text-orange-500"
               >
                 Dashboard
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
@@ -55,12 +56,12 @@ function Login() {
               <input className="mr-1" type="checkbox" />
               <span>Remember Me</span>
             </label>
-            <a
+            <Link
               className="text-orange-600 hover:text-orange-700 hover:underline hover:underline-offset-4"
-              href="#"
+              to="#"
             >
               Forgot Password?
-            </a>
+            </Link>
           </div>
           <div className="text-center md:text-left">
             <button
@@ -72,12 +73,12 @@ function Login() {
           </div>
           <div className="mt-4 font-semibold text-sm text-slate-500 text-center md:text-left">
             Don't have an account?{" "}
-            <a
+            <Link
               className="text-red-600 hover:underline hover:underline-offset-4"
-              href="signup"
+              to="signup"
             >
               Register
-            </a>
+            </Link>
           </div>
         </div>
       </section>

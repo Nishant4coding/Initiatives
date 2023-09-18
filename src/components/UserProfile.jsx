@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaAward } from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 const UserProfile = () => {
   const socialMediaLinks = [
@@ -28,15 +29,15 @@ const UserProfile = () => {
         {/* Social Media Links */}
         <div className="mt-4 flex justify-center space-x-4">
           {socialMediaLinks.map((socialMedia, index) => (
-            <a
+            <Link
               key={index}
-              href={socialMedia.link}
+              to={socialMedia.link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl text-white hover:text-gray-300"
             >
               {getSocialMediaIcon(socialMedia.name)}
-            </a>
+            </Link>
           ))}
         </div>
 

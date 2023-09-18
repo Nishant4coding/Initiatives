@@ -7,6 +7,7 @@ import validation from "../Assets/validate.png";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import FAQs from "./FAQs";
+import {Link} from 'react-router-dom'
 
 function Landing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,28 +20,28 @@ function Landing() {
       <section className="w-full px-2 text-gray-700 bg-white sticky top-0 z-10 ">
         <div className="container flex flex-col flex-wrap items-center justify-between py-2 mx-auto md:flex-row max-w-7xl">
           <div className="relative flex flex-col md:flex-row">
-            <a
-              href="#_"
+            <Link
+              to="#_"
               className="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
               <img src={logoecell} className="mr-5" />
               <span className="mx-auto text-3xl font-bold font-black leading-none text-black select-none">
                 E-Cell Startup Validation
               </span>
-            </a>
+            </Link>
             <nav className="flex flex-wrap sm:items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-20    md:border-l md:border-gray-200 ">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="mr-20 ml-20 r-0 font-medium leading-6 text-lg text-gray-600 hover:text-orange-500"
               >
                 Home
-              </a>
-              <a
-                href="#faq"
+              </Link>
+              <Link
+                to="#faq"
                 className="mr-20  r-0 font-medium leading-6 text-lg text-gray-600 hover:text-orange-500"
               >
                 FAQs
-              </a>
+              </Link>
               <div className="relative inline-block text-left">
                 <div>
                   <button
@@ -78,33 +79,33 @@ function Landing() {
                     tabIndex="-1"
                   >
                     <div className="py-1" role="none">
-                      <a
-                        href="/startupvalidation"
+                      <Link
+                        to="/startupvalidation"
                         className="text-gray-700 block px-4 py-2 text-lg font-semibold"
                         role="menuitem"
                         tabIndex="-1"
                         id="menu-item-0"
                       >
                         Startup Validation
-                      </a>
-                      <a
-                        href="/investment"
+                      </Link>
+                      <Link
+                        to="/investment"
                         className="text-gray-700 block px-4 py-2 text-lg font-semibold"
                         role="menuitem"
                         tabIndex="-1"
                         id="menu-item-1"
                       >
                         Investment Platform
-                      </a>
-                      <a
-                        href="eresource"
+                      </Link>
+                      <Link
+                        to="eresource"
                         className="text-gray-700 block px-4 py-2 text-lg font-semibold"
                         role="menuitem"
                         tabIndex="-1"
                         id="menu-item-2"
                       >
                         E-Resourses
-                      </a>
+                      </Link>
                       <form method="POST" action="#" role="none">
                         {/* <button
                 type="submit"
@@ -138,12 +139,12 @@ function Landing() {
                 Validate your startup idea with real user feedback.
               </p>
               <div className="flex justify-center items-center">
-                <a
-                  href="/validationform"
+                <Link
+                  to="/validationform"
                   className="bg-orange-300 text-black hover:bg-orange-400 py-2 px-6 rounded-full text-lg font-semibold transition duration-300"
                 >
                   Get Started
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-1/2">
@@ -267,36 +268,36 @@ function Landing() {
                   Quick Links
                 </h3>
                 <nav className="space-y-2">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="text-black hover:text-orange-500 transition duration-300 block"
                   >
                     Home
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="text-black hover:text-orange-500 transition duration-300 block"
                   >
                     About
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="text-black hover:text-orange-500 transition duration-300 block"
                   >
                     Events
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="text-black hover:text-orange-500 transition duration-300 block"
                   >
                     Team
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="text-black hover:text-orange-500 transition duration-300 block"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </nav>
               </div>
               <div className="text-center">
@@ -309,12 +310,12 @@ function Landing() {
                 </div>
                 <div className="flex items-center mb-4">
                   <FaEnvelope className="mr-2 text-orange-500" />
-                  <a
-                    href="mailto:ecell@galgotiasuniversity.edu.in"
+                  <Link
+                    to="mailto:ecell@galgotiasuniversity.edu.in"
                     className="hover:text-orange-500 transition duration-300"
                   >
                     ecell@galgotiasuniversity.edu.in
-                  </a>
+                  </Link>
                 </div>
                 <div className="flex items-center">
                   <MdLocationPin className="text-5xl mr-2 text-orange-500" />

@@ -5,6 +5,7 @@ import s3 from '../Assets/s3.jpg';
 import s4 from '../Assets/s4.jpg';
 import s5 from '../Assets/s5.jpg';
 import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 const pastSpeakersData = [
   {
@@ -86,30 +87,30 @@ const PastSpeakers = () => {
                 </h3>
                 <p className="text-sm text-gray-600 mb-2">{speaker.title}</p>
                 <div className="flex items-center justify-center space-x-4">
-                  <a
-                    href={speaker.linkedin}
+                  <Link
+                    to={speaker.linkedin}
                     className="text-blue-500 hover:underline hover:text-blue-600 transition duration-300"
                   >
                     <FaLinkedin />
-                  </a>
-                  <a
-                    href={speaker.twitter}
+                  </Link>
+                  <Link
+                    to={speaker.twitter}
                     className="text-blue-400 hover:underline hover:text-blue-500 transition duration-300"
                   >
                     <FaTwitter />
-                  </a>
-                  <a
-                    href={speaker.instagram}
+                  </Link>
+                  <Link
+                    to={speaker.instagram}
                     className="text-red-500 hover:underline hover:text-red-600 transition duration-300"
                   >
                     <FaInstagram />
-                  </a>
-                  <a
-                    href={speaker.facebook}
+                  </Link>
+                  <Link
+                    to={speaker.facebook}
                     className="text-blue-800 hover:underline hover:text-blue-900 transition duration-300"
                   >
                     <FaFacebook />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

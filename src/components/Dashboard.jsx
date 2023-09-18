@@ -9,10 +9,14 @@ import {
   FaLongArrowAltLeft,
 } from "react-icons/fa";
 import { GrCertificate } from "react-icons/gr";
+import {GoTasklist} from 'react-icons/go'
+import {SiOpslevel} from 'react-icons/si'
 import { FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 import { RiCoinsLine } from "react-icons/ri";
 import UserProfile from "./UserProfile"; // Import the UserProfile component
+import { BsCalendarEventFill, BsListTask } from "react-icons/bs";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("dashboard"); // 'dashboard', 'profile', or 'task'
@@ -53,18 +57,18 @@ const Dashboard = () => {
                 activeTab === "dashboard" ? "bg-orange-400" : ""
               }`}
             >
-              <a href="#" className="block" onClick={showDashboard}>
+              <Link to="#" className="block" onClick={showDashboard}>
                 <FaChalkboardTeacher className="inline-block mr-2" /> Dashboard
-              </a>
+              </Link>
             </li>
             {/* <li
               className={`px-10 py-2 hover:bg-orange-400 text-black font-semibold text-lg  rounded-2xl mb-5 ${
                 activeTab === "profile" ? "bg-orange-400" : ""
               }`}
             >
-              <a href="#" className="block" onClick={showUserProfile}>
+              <Link to="#" className="block" onClick={showUserProfile}>
                 <FaUser className="inline-block mr-2" /> Profile
-              </a>
+              </Link>
             </li> */}
 
             <li
@@ -72,25 +76,25 @@ const Dashboard = () => {
                 activeTab === "task" ? "bg-orange-400" : ""
               }`}
             >
-              <a href="#" className="block" onClick={showTask}>
+              <Link to="#" className="block" onClick={showTask}>
                 <FaTasks className="inline-block mr-2" /> Tasks
-              </a>
+              </Link>
             </li>
             {/* Add more tabs as needed */}
           </ul>
           <div className="mt-20">
-          <a
-            href="/"
-            className="px-4 py-2 text-lg rounded-2xl mb-0    w-auto text-black"
-          >
-            <FaHome className="inline-block mr-2 " /> Home
-          </a>
-          <a
-            href="/"
-            className="px-4 py-2 text-lg rounded-2xl mb-0  bottom-10  w-auto text-black"
-          >
-            <FaLongArrowAltLeft className="inline-block mr-2" /> LogOut
-          </a>
+            <Link
+              to="/"
+              className="px-4 py-2 text-lg rounded-2xl mb-0    w-auto text-black"
+            >
+              <FaHome className="inline-block mr-2 " /> Home
+            </Link>
+            <Link
+              to="/"
+              className="px-4 py-2 text-lg rounded-2xl mb-0  bottom-10  w-auto text-black"
+            >
+              <FaLongArrowAltLeft className="inline-block mr-2" /> LogOut
+            </Link>
           </div>
         </aside>
 
@@ -182,26 +186,27 @@ const Dashboard = () => {
                   <div className="flex  items-center space-x-5">
                     {/* Add social media icons here */}
                     <div className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
-                    <a href="#" className="text-blue-500">
-                      <FaLinkedin className="text-5xl" /> {/* LinkedIn icon */}
-                    </a>
+                      <Link to="#" className="text-blue-500">
+                        <FaLinkedin className="text-5xl" />{" "}
+                        {/* LinkedIn icon */}
+                      </Link>
                     </div>
-                    <div  className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
-                    <a href="#" className="text-blue-400">
-                      <FaTwitter className="text-5xl" /> {/* Twitter icon */}
-                    </a>
+                    <div className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
+                      <Link to="#" className="text-blue-400">
+                        <FaTwitter className="text-5xl" /> {/* Twitter icon */}
+                      </Link>
                     </div>
-                    <div  className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
-                    <a href="#" className="text-red-500">
-                      <FaInstagram className="text-5xl" />{" "}
-                      {/* Instagram icon */}
-                    </a>
+                    <div className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
+                      <Link to="#" className="text-red-500">
+                        <FaInstagram className="text-5xl" />{" "}
+                        {/* Instagram icon */}
+                      </Link>
                     </div>
-                    <div  className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
-                    <a href="#" className="text-blue-500">
-                      <FaFacebook className="text-5xl" />{" "}
-                      {/* Instagram icon */}
-                    </a>
+                    <div className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
+                      <Link to="#" className="text-blue-500">
+                        <FaFacebook className="text-5xl" />{" "}
+                        {/* Instagram icon */}
+                      </Link>
                     </div>
                     {/* Add more social media icons as needed */}
                   </div>
@@ -209,15 +214,26 @@ const Dashboard = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-10 mb-10">
                   {/* Display achievement cards here */}
                   <div className="h-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-lg p-2 max-h-[100%]">
+                    <div className="flex flex-column items-center">
+                      <SiOpslevel className="text-4xl" /> &nbsp; &nbsp; 
                     <h3 className="text-xl font-semibold">Current Level</h3>
+                    </div>
+                    
                     <p>Level-2</p>
                   </div>
-                  <div className="h-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-xl p-2">
+                  <div className="h-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-xl p-3">
+                    <div className="flex flex-column  items-center">
+                      <BsCalendarEventFill className="5xl"/> &nbsp; &nbsp;  
                     <h3 className="text-xl font-semibold">Event Hosted</h3>
+                    </div>
                     <p>Workshop, Ideathon</p>
                   </div>
-                  <div className="h-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-xl p-2">
+                  <div className="h-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-xl p-2  ">
+                    <div className="flex flex-column items-center">
+                      <BsListTask className="text-3xl mt-1"/> &nbsp; &nbsp; 
                     <h3 className="text-xl font-semibold">Tasks Completed</h3>
+                    </div>
+                    
                     <p>2 weekly tasks</p>
                   </div>
                   {/* Add more achievement cards */}
