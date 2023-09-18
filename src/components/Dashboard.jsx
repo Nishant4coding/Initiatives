@@ -173,7 +173,7 @@ const Dashboard = () => {
             <div className="flex-1 overflow-x-hidden overflow-y-auto  mt-2 rounded-2xl h-auto">
               <div className="container mx-auto px-6 py-4">
                 <div className="h-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-200 to-orange-400 rounded-lg p-6 max-h-[100%] w-auto flex items-center space-x-4">
-                  <div className="mr-60">
+                  <div className="mr-32">
                     <h3 className="text-2xl font-semibold">
                       Name: Ayush Agarwal
                     </h3>
@@ -183,7 +183,7 @@ const Dashboard = () => {
                     <p className="text-xl">Campus Ambassador L-1</p>
                     <p>Student Id: 004</p>
                   </div>
-                  <div className="flex  items-center space-x-5">
+                  <div className="flex  items-center space-x-5 ">
                     {/* Add social media icons here */}
                     <div className="flex justify-center items-center rounded-full w-20 h-20 bg-orange-100">
                       <Link to="#" className="text-blue-500">
