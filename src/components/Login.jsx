@@ -1,6 +1,6 @@
 import React from "react";
 import loginsignup from "./Assets/login-signup.jpg";
-import logoecell from "./Assets/logo.png";
+import logoecell from "./Assets/logo.jpeg";
 import {Link} from 'react-router-dom'
 
 function Login() {
@@ -13,7 +13,7 @@ function Login() {
               to="#_"
               className="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <img src={logoecell} className="mr-5" />
+              <img src={logoecell} className="mr-5 w-20" />
               <span className="mx-auto text-3xl font-black leading-none text-black select-none">
                 E-Cell Campus Ambassador
               </span>

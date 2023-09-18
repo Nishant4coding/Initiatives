@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoecell from "../Assets/logo.png";
+import logoecell from "../Assets/logo.jpeg";
 import PastSpeakers from "./PastSpeakers";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ function Investment() {
               to="#_"
               className="flex items-center mb-5 font-medium text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0"
             >
-              <img src={logoecell} className="mr-5" />
+              <img src={logoecell} className="mr-5 w-20" />
               <span className="mx-auto text-3xl font-bold font-black leading-none text-black select-none">
                 E-Cell Investment Portal
               </span>

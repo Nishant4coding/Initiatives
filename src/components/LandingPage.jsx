@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import image1 from "./Assets/ca.jpg";
-import logoecell from "./Assets/logo.png";
+import logoecell from "./Assets/logo.jpeg";
 import ecell from "./Assets/ecell.JPG";
 import img1 from "./Assets/1.jpg";
 import img2 from "./Assets/2.jpg";
@@ -150,14 +150,14 @@ function LandingPage() {
             <Link
               to="#_"
             >
-              <img src={logoecell} className="mr-5" />
+              <img src={logoecell} className="mr-2 w-20" />
               </Link>
               <span className="mx-auto my-5 text-3xl font-black leading-none text-black select-none">
                 E-Cell Campus Ambassador
               </span>
               </div>
             
-            <nav className="flex flex-wrap sm:items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-20    md:border-l md:border-gray-200 ">
+            <nav className="flex flex-wrap sm:items-center mb-5 text-base md:mb-0 md:pl-8 md:ml-10    md:border-l md:border-gray-200 ">
               <Link
                 to="#_"
                 className="mr-8  font-medium leading-6 text-lg text-gray-600 hover:text-orange-500"
