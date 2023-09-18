@@ -75,7 +75,7 @@ function Login() {
             Don't have an account?{" "}
             <Link
               className="text-red-600 hover:underline hover:underline-offset-4"
-              to="signup"
+              to="/signup"
             >
               Register
             </Link>
